@@ -8,13 +8,13 @@ A full-featured blogging platform built with **React**, **Redux Toolkit** and **
 
 <div align="center">
 
-<a href="https://your-deployed-url-here.com">
+<a href="https://blog-website-2cpb7na30-solo-4f2e.vercel.app/">
   <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Visit%20MegaBlog%20→-7C3AED?style=for-the-badge&labelColor=4C1D95" alt="Live Demo" height="60"/>
 </a>
 
 <br/><br/>
 
-🔗 **[your-deployed-url-here.com](https://blog-website-2cpb7na30-solo-4f2e.vercel.app/)**
+🔗 **[Deployed Url](https://blog-website-2cpb7na30-solo-4f2e.vercel.app/)**
 
 <br/>
 
@@ -26,8 +26,6 @@ A full-featured blogging platform built with **React**, **Redux Toolkit** and **
 ![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?style=flat-square&logo=appwrite&logoColor=white)
 
 </div>
-
-> 🔧 **To update:** replace `https://your-deployed-url-here.com` (in the button link and the text link above) and `your-deployed-url-here.com` (the visible text) with your actual deployed link from Vercel, Netlify or Appwrite Sites.
 
 ---
 
