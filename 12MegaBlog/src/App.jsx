@@ -5,7 +5,7 @@ import appwriteService from './appwrite/config'
 import {login, logout} from './store/authSlice'
 
 // Loader
-import Loader from './pages/Loader.jsx'
+import Landing from './pages/Landing.jsx'
 
 import {setPosts} from './store/postSlice'
 // import { useSelector } from "react-redux"
@@ -19,6 +19,7 @@ function App() {
   // console.log('App url: ', import.meta.env.VITE_APP_APPWRITE_URL);
 
   const [loading, setLoading] = useState(true)
+  const [introFinished, setIntroFinished] = useState(false);
   const dispatch = useDispatch()
 
   // checking posts 
@@ -47,7 +48,7 @@ function App() {
     .finally(() => setLoading(false))
   }, [])
 
-  console.log('App');
+  // console.log('App');
   // console.log('Checking posts in App:', postCheck);
   
   
@@ -59,7 +60,7 @@ function App() {
   //   </>
   // )
 
-  return !loading ? (
+  return (introFinished && !loading) ? (
     <div className="min-h-screen flex justify-center bg-gray-400">
         <div className="max-w-4xl">
               <Header/>
@@ -70,7 +71,7 @@ function App() {
               <Footer/>
         </div>
     </div>
-  ) : <Loader/>
+  ) : <Landing onFinish={() => setIntroFinished(true)} />
 
   // <h1 className="text-white">Loading...</h1>
   

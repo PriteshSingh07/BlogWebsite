@@ -21,7 +21,7 @@ function AllPosts() {
 
 
 
-    console.log('AllPosts');
+    // console.log('AllPosts');
     // console.log('Post in all posts: ',posts);
 
     // console.log('posts-total',posts.length);

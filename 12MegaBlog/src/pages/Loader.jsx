@@ -1,6 +1,3 @@
-
-import React from 'react';
-
 function Loader() {
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-900 z-50">

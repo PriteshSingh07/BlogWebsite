@@ -41,7 +41,7 @@ function Home() {
 
 
     // console.log(posts.length);
-    console.log('Home');
+    // console.log('Home');
     // console.log('AuthStatus: ', authStatus);
     // console.log('Post in home: ',postsData);
     
