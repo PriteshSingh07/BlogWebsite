@@ -4,6 +4,8 @@ import authService from './appwrite/auth'
 import appwriteService from './appwrite/config'
 import {login, logout} from './store/authSlice'
 
+// Loader
+import Loader from './pages/Loader.jsx'
 
 import {setPosts} from './store/postSlice'
 // import { useSelector } from "react-redux"
@@ -68,7 +70,9 @@ function App() {
               <Footer/>
         </div>
     </div>
-  ) : <h1 className="text-white">Loading...</h1>
+  ) : <Loader/>
+
+  // <h1 className="text-white">Loading...</h1>
   
 
 

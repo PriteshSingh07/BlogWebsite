@@ -4,6 +4,7 @@ import appwriteService from '../appwrite/config'
 import {Button, Container} from '../components'
 import parse from 'html-react-parser'
 import {useSelector} from 'react-redux'
+import Loader from './Loader'
 
 
 
@@ -17,7 +18,7 @@ function Post() {
 
     // console.log('Post Slug:',slug);
     // console.log('Post:',post);
-    console.log('UserData:',data);
+    // console.log('UserData:',data);
     
 
     const isAuthor = post && data ? post.userId === data.userData.$id : false
@@ -83,7 +84,7 @@ function Post() {
                 <div className='browser-css'>{parse(post.content)}</div>
             </Container>
         </div>
-    ) : null
+    ) : <Loader/>
 }
 
 export default Post
