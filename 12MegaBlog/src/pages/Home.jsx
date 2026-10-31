@@ -2,11 +2,17 @@ import React, {useState, useEffect} from 'react'
 import appwriteService from '../appwrite/config'
 import {Container, PostCard} from '../components'
 import { useSelector } from 'react-redux'
+import App from '../App'
 function Home() {
 
     // const [posts, setPosts] = useState([]) // no need since postsData is already an array[object]
     const authStatus = useSelector(state => state.auth.status)
     const postsData = useSelector((state) => state.posts.posts)
+    if(postsData.length === 0 && authStatus === true){
+        return (
+            <App/>
+        )
+    }    
 
     
     // setPosts(postsData)
