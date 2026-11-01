@@ -8,13 +8,13 @@ A full-featured blogging platform built with **React**, **Redux Toolkit** and **
 
 <div align="center">
 
-<a href="https://blog-website-2cpb7na30-solo-4f2e.vercel.app/">
+<a href="https://blog-website-solo-4f2e.vercel.app/">
   <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Visit%20MegaBlog%20→-7C3AED?style=for-the-badge&labelColor=4C1D95" alt="Live Demo" height="60"/>
 </a>
 
 <br/><br/>
 
-🔗 **[Deployed Url](https://blog-website-2cpb7na30-solo-4f2e.vercel.app/)**
+🔗 **[Deployed Url](https://blog-website-solo-4f2e.vercel.app/)**
 
 <br/>
 
