@@ -51,7 +51,7 @@ function Home() {
 
     if(authStatus !== true){
         return (
-            <div className='w-full py-8 mt-4 text-center'>
+            <div className='w-full py-8 mt-4 flex items-center justify-center text-center'>
                 <Container>
                     <div className='flex flex-wrap'>
                         <div className='p-2 w-full'>
@@ -95,7 +95,7 @@ function Home() {
     return (
         <>
         <div className='w-full border-2 border-purple-700 rounded-3xl bg-gray-300'>
-                <h1 className='uppercase font-bold text-red-400 text-center'>
+                <h1 className='uppercase font-bold text-red-400 text-center '>
                     Home
                 </h1>   
         </div>

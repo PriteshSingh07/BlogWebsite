@@ -10,7 +10,7 @@ import Landing from './pages/Landing.jsx'
 import {setPosts} from './store/postSlice'
 // import { useSelector } from "react-redux"
 
-
+// header footer outlet
 import {Header, Footer} from './components/index'
 import { Outlet } from "react-router-dom"
 
@@ -62,12 +62,20 @@ function App() {
 
   return (introFinished && !loading) ? (
     <div className="min-h-screen flex justify-center bg-gray-400">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl flex flex-col gap-5">
               <Header/>
-              <main>
-                {/* TODO: */}
-                <Outlet/>
-              </main>
+               {/* Main content */}
+                <main className="w-full max-w-7xl mx-auto px-4 flex-1 flex flex-col items-center justify-center">
+
+                    {introFinished && !loading ? (
+                        <Outlet />
+                    ) : (
+                        <Landing
+                            onFinish={() => setIntroFinished(true)}
+                        />
+                    )}
+                </main>
+
               <Footer/>
         </div>
     </div>
